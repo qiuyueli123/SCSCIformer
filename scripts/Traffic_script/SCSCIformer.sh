@@ -100,6 +100,7 @@ python -u run.py \
  
 mse:0.43221840262413025, mae:0.2812221646308899
 
+
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
