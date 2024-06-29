@@ -101,7 +101,7 @@ python -u run.py \
 mse:0.43221840262413025, mae:0.2812221646308899
 
 
-python -u run.py \
+  python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path ./dataset/traffic/ \
@@ -115,7 +115,7 @@ python -u run.py \
   --seq_len 96 \
   --label_len 48 \
   --pred_len 96 \
-  --e_layers 4 \
+  --e_layers 1 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 862 \
@@ -132,4 +132,4 @@ python -u run.py \
   --patience 3 \
   --lradj type6
   
- mse:0.4217425286769867, mae:0.26556509733200073
+mse:0.4142213761806488, mae:0.2699248790740967
