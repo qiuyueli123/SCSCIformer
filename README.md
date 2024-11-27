@@ -26,7 +26,6 @@ bash ./scripts/ECL_script/SCSCIformer.sh
 ## Abstract 
 In this paper, we propose a simpler and more accurate framework for multivariate long-term time series forecasting based on a cross-variable transformer. First, this new architecture concatenates the normalized original values of the time series with the normalized mean and standard deviation values over a specific period as inputs, thereby avoiding the need to design a module for fusing statistical characteristics inputs. Second, it processes the concatenated data using a dropout network, which enhances the model's performance on specific time series datasets. Finally, it refines the model's prediction results using a set of trainable weight parameters, further improving predictive performance. Experimental results on eight real-world time series datasets show that our new approach outperforms existing methods, achieving the best results in 55 out of 64 individual evaluation metrics and 15 out of 16 average evaluation metrics. The strategies for preprocessing time series data using a dropout network and for differentially fine-tuning the model outputs with a set of trainable weight parameters, proposed in this paper, can also be directly applied to other models, significantly enhancing their predictive performance. 
 #![overall](https://raw.githubusercontent.com/qiuyueli123/SCSCIformer/main/pic/overall.jpg)
-![overall](pic/overall.jpg)
 
 ## Result
 
@@ -34,7 +33,7 @@ In this paper, we propose a simpler and more accurate framework for multivariate
 
 On eight different time series datasets, our method outperforms competitors across a total of 64 evaluation metrics, achieving optimal results on 55 metrics. In contrast, the SCSformer model excels in 2 metrics, the Client model excels in 1 metrics, and the iTransformer excels in 5 metrics. Furthermore, when considering a total of 16 average evaluation metrics across the same time series datasets, our method leads in 15 metrics, while only the iTransformer model in 1 metrics.
 
-![result](https://raw.githubusercontent.com/qiuyueli123/SCSformer/main/pic/result.png)
+![result](https://raw.githubusercontent.com/qiuyueli123/SCSCIformer/main/pic/result.png)
 
 
 ## Others
